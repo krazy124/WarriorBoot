@@ -1,3 +1,8 @@
 body {
-    font-size: 15pt;
+  font-size: 15pt;
+}
+
+.theTron {
+  background-image: url("/images/fenceSun.png");
+  height: 550px;
 }

@@ -4,5 +4,32 @@ body {
 
 .theTron {
   background-image: url("/images/fenceSun.png");
-  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vw;
 }
+.fenceTitle {
+  font-size: 13vw;
+  line-height: 7vw;
+}
+#stain{
+  background-image: url(/images/stain1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container {
+  position: relative;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.centered {
+  bottom: 15%;
+  left: 20%;
+}
+

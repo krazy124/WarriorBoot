@@ -52,10 +52,11 @@ Extra extra large	xxl	≥1400px
   bottom: 8px;
   left: 16px;
 }
-.centered {
+.serviceText {
   position: absolute;
-  bottom: 60%;
+  bottom: 20%;
   left: 20%;
+  font-size: var(--f-sm);
 }
 @media screen and (max-width: 1200px) {
   .fenceTitle {

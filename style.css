@@ -25,15 +25,32 @@ Extra extra large	xxl	≥1400px
   background-size: cover;
   height: 85vw;
 }
-.fenceTitle {
+.title {
   font-size: var(--f-xxl);
   line-height: 5vw;
   letter-spacing: -2px;
   margin-top: 15vh;
+  text-shadow: 2px 2px 4px #000000;
+  color: azure;
 }
 
 .subTitle {
   font-size: var(--f-md);
+  text-shadow: 2px 2px 4px #000000;
+  color: azure;
+}
+.navText {
+  font-size: var(--f-sm);
+  text-shadow: 2px 2px 4px #000000;
+  color: azure;
+}
+.serviceText {
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+  font-size: var(--f-sm);
+  text-shadow: 2px 2px 4px #000000;
+  color: azure;
 }
 
 #stain {
@@ -52,14 +69,19 @@ Extra extra large	xxl	≥1400px
   bottom: 8px;
   left: 16px;
 }
-.serviceText {
-  position: absolute;
-  bottom: 20%;
-  left: 20%;
-  font-size: var(--f-sm);
+
+.testimonial {
+  width: 150px;
+  border-radius: 100%;
+  margin-left: 43%;
 }
+
+.alignCenter {
+  padding-left: 45%;
+}
+
 @media screen and (max-width: 1200px) {
-  .fenceTitle {
+  .title {
     font-size: var(--f-xl);
   }
   .subTitle {
@@ -67,7 +89,7 @@ Extra extra large	xxl	≥1400px
   }
 }
 @media screen and (max-width: 900px) {
-  .fenceTitle {
+  .title {
     font-size: var(--f-lg);
     margin-top: 12vh;
   }
@@ -76,7 +98,7 @@ Extra extra large	xxl	≥1400px
   }
 }
 @media screen and (max-width: 550px) {
-  .fenceTitle {
+  .title {
     font-size: var(--f-md);
     margin-top: 8vh;
   }
@@ -85,7 +107,7 @@ Extra extra large	xxl	≥1400px
   }
 }
 @media screen and (max-width: 350px) {
-  .fenceTitle {
+  .title {
     font-size: var(--f-xs);
     margin-top: 5vh;
   }

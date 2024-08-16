@@ -73,7 +73,8 @@ Extra extra large	xxl	≥1400px
 .testimonial {
   width: 150px;
   border-radius: 100%;
-  margin-left: 43%;
+  box-shadow: 2px 2px 4px black;
+  margin-left: 40%;
 }
 
 .alignCenter {
@@ -104,6 +105,9 @@ Extra extra large	xxl	≥1400px
   }
   .subTitle {
     font-size: var(--f-xxs);
+  }
+  .testimonial {
+    width: 90px;
   }
 }
 @media screen and (max-width: 350px) {

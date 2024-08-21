@@ -11,12 +11,12 @@ Extra extra large	xxl	≥1400px
 :root {
   --f-xxxs: 0.5rem;
   --f-xxs: 1rem;
-  --f-xs: 1.5rem;
-  --f-sm: 2rem;
-  --f-md: 2.5rem;
-  --f-lg: 4rem;
-  --f-xl: 6rem;
-  --f-xxl: 7rem;
+  --f-xs: 2rem;
+  --f-sm: 3rem;
+  --f-md: 4.5rem;
+  --f-lg: 6rem;
+  --f-xl: 7.5rem;
+  --f-xxl: 10rem;
 }
 
 .theTron {
@@ -35,9 +35,6 @@ Extra extra large	xxl	≥1400px
 }
 
 .subTitle {
-  font-size: var(--f-md);
-  text-shadow: 2px 2px 4px #000000;
-  color: azure;
 }
 .navText {
   font-size: var(--f-sm);
@@ -48,7 +45,7 @@ Extra extra large	xxl	≥1400px
   position: absolute;
   bottom: 20%;
   left: 20%;
-  font-size: var(--f-sm);
+  font-size: var(--f-xs);
   text-shadow: 2px 2px 4px #000000;
   color: azure;
 }
@@ -75,13 +72,58 @@ Extra extra large	xxl	≥1400px
   border-radius: 100%;
   box-shadow: 2px 2px 4px black;
   margin-left: 40%;
+  color: white;
+}
+
+.testimonialFont {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: var(--f-xs);
 }
 
 .alignCenter {
   padding-left: 45%;
 }
 
-@media screen and (max-width: 1200px) {
+.title {
+  font-size: var(--f-xxl);
+  margin-top: 12vh;
+}
+.subTitle {
+  font-size: var(--f-md);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/*------------------------------Media Query section--------------------*/
+@media screen and (max-width: 550px) {
+  .title {
+    margin-top: 8vh;
+  }
+  .subTitle {
+  }
+}
+@media screen and (max-width: 350px) {
+  .title {
+    margin-top: 5vh;
+  }
+  .subTitle {
+  }
+}
+
+/*-----------------------Testimonial meda section----------------------------*/
+@media screen and (max-width: 2000px) {
+  .testimonial {
+    margin-left: 46%;
+  }
+  .title {
+  }
+  .subTitle {
+  }
+}
+@media screen and (max-width: 1500px) {
+  .testimonial {
+    margin-left: 46%;
+  }
   .title {
     font-size: var(--f-xl);
   }
@@ -89,33 +131,56 @@ Extra extra large	xxl	≥1400px
     font-size: var(--f-sm);
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1169px) {
+  .testimonial {
+    margin-left: 44%;
+  }
   .title {
     font-size: var(--f-lg);
-    margin-top: 12vh;
   }
   .subTitle {
     font-size: var(--f-xs);
   }
 }
-@media screen and (max-width: 550px) {
-  .title {
-    font-size: var(--f-md);
-    margin-top: 8vh;
-  }
-  .subTitle {
-    font-size: var(--f-xxs);
-  }
+@media screen and (max-width: 969px) {
   .testimonial {
-    width: 90px;
+    margin-left: 42%;
   }
-}
-@media screen and (max-width: 350px) {
   .title {
-    font-size: var(--f-xs);
-    margin-top: 5vh;
   }
   .subTitle {
-    font-size: var(--f-xxxs);
   }
 }
+@media screen and (max-width: 909px) {
+  .testimonial {
+    margin-left: 45%;
+
+    .title;
+  }
+  .subTitle {
+  }
+}
+@media screen and (max-width: 750px) {
+  .testimonial {
+    margin-left: 40%;
+  }
+  .title {
+  }
+  .subTitle {
+  }
+}
+
+/*
+change
+750
+909
+
+977
+1187
+
+@media screen and (max-width: 1187px){}
+@media screen and (max-width: 977px ){}
+@media screen and (max-width: 909px){}
+@media screen and (max-width: 750px){}
+
+*/

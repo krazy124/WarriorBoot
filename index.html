@@ -1,154 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
-  <title>HTML</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <section
+      class="object-fit-cover m-0 p-0 container-fluid theTron"
+      id="header"
+      style="max-height: 75vh"
+    >
+      <div class="row fluid gy-4">
+        <div class="object-fit-cover">
+          <nav
+            class="navbar navbar-expand-lg navbar-dark bg-transparent ps-1 pt-3"
+          >
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-<body>
-  <section class="object-fit-cover m-0 p-0 container-fluid theTron" id="header" style="max-height: 75vh">
-    <div class="row fluid gy-4">
-      <div class="object-fit-cover">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent ps-1 pt-3">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+              <div
+                class="collapse navbar-collapse ps-5"
+                id="navbarTogglerDemo03"
+              >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item navText">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
 
-            <div class="collapse navbar-collapse ps-5" id="navbarTogglerDemo03">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item navText">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
+                  <li class="nav-item navText">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
 
-                <li class="nav-item navText">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-
-                <li class="nav-item navText">
-                  <a class="nav-link" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
+                  <li class="nav-item navText">
+                    <a class="nav-link" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <!--end container-->
-        </nav>
-        <!--End of NavBar-->
+            <!--end container-->
+          </nav>
+          <!--End of NavBar-->
 
-        <!--Title-->
-        <div class="row" id="title">
-          <div class="col text-center">
-            <h1 class="title text-center">FENCE WARRIORS</h1>
-            <span class="subTitle text-light">NOT JUST ANOTHER FENCE COMPANY</span>
+          <!--Title-->
+          <div class="row" id="title">
+            <div class="col text-center">
+              <h1 class="title text-center">FENCE WARRIORS</h1>
+              <span class="subTitle text-light"
+                >NOT JUST ANOTHER FENCE COMPANY</span
+              >
+            </div>
           </div>
         </div>
+        <!--end column-->
       </div>
-      <!--end column-->
-    </div>
-    <!--end row-->
-  </section>
-  <!--end header-->
+      <!--end row-->
+    </section>
+    <!--end header-->
 
-  <div class="container-fluid mt-3">
-    <div class="text-center display-5 pb-3 text-bold">Our Services</div>
-    <div class="row">
-      <div class="col-lg-6 col-xl-3 pb-2">
-        <a href="https://www.google.com/">
-          <div class="container">
-            <img class="img-fluid p-0 rounded shadow-lg" style="max-width: 100%; height: auto" src="/images/stain1.png" alt="" />
-            <div class="serviceText position-absolute p-0">Staining</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-lg-6 col-xl-3 pb-2">
-        <a href="https://www.google.com/">
-          <div class="container">
-            <img class="img-fluid rounded shadow-lg" style="max-width: 100%; height: auto" src="/images/builds.png" alt="" />
-            <div class="serviceText position-absolute">
-              Builds &<br />Rebuilds
+    <div class="container-fluid mt-3">
+      <div class="text-center display-5 pb-3 text-bold">Our Services</div>
+      <div class="row">
+        <div class="col-lg-6 col-xl-3 pb-2">
+          <a href="https://www.google.com/">
+            <div class="container">
+              <img
+                class="img-fluid p-0 rounded shadow-lg"
+                style="max-width: 100%; height: auto"
+                src="/images/stain1.png"
+                alt=""
+              />
+              <div class="serviceText position-absolute p-0">Staining</div>
             </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="col-lg-6 col-xl-3 pb-2">
-        <a href="https://www.google.com/">
-          <div class="container">
-            <img class="img-fluid rounded shadow-lg" style="max-width: 100%; height: auto" src="/images/repair.png" alt="" />
-            <div class="serviceText position-absolute">Repairs</div>
-          </div>
-        </a>
-      </div>
+        <div class="col-lg-6 col-xl-3 pb-2">
+          <a href="https://www.google.com/">
+            <div class="container">
+              <img
+                class="img-fluid rounded shadow-lg"
+                style="max-width: 100%; height: auto"
+                src="/images/builds.png"
+                alt=""
+              />
+              <div class="serviceText position-absolute">
+                Builds &<br />Rebuilds
+              </div>
+            </div>
+          </a>
+        </div>
 
-      <div class="col-lg-6 col-xl-3 pb-2">
-        <a href="https://www.google.com/">
-          <div class="container">
-            <img class="img-fluid rounded shadowa-lg" style="max-width: 100%; height: auto" src="/images/pressureWashDrive.png" alt="" />
-            <div class="serviceText position-absolute">Pressure Washing</div>
-          </div>
-        </a>
+        <div class="col-lg-6 col-xl-3 pb-2">
+          <a href="https://www.google.com/">
+            <div class="container">
+              <img
+                class="img-fluid rounded shadow-lg"
+                style="max-width: 100%; height: auto"
+                src="/images/repair.png"
+                alt=""
+              />
+              <div class="serviceText position-absolute">Repairs</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-xl-3 pb-2">
+          <a href="https://www.google.com/">
+            <div class="container">
+              <img
+                class="img-fluid rounded shadowa-lg"
+                style="max-width: 100%; height: auto"
+                src="/images/pressureWashDrive.png"
+                alt=""
+              />
+              <div class="serviceText position-absolute">Pressure Washing</div>
+            </div>
+          </a>
+        </div>
+        <!--end column-->
       </div>
-      <!--end column-->
+      <!--end row-->
     </div>
-    <!--end row-->
-  </div>
-  <!--end container-->
-<!--------------------------->
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner shadow-lg">
-      <div class="carousel-item active pt-3 bg-primary-subtle">
-        <br>
-        <img src="/images/testimonial1.png" class="d-block testimonial" alt="..." />
-        <br>
-        <p class="text-center ms-5 me-5">"My fence looks almost new. I thought I need a completely new fence.
-          They did a great job at restoring my fence. "
-          <br><br>Claire Bordue
-          <br>McKinney, Texas
-        </p>
+    <!--end container-->
+    <!--------------------------->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner shadow-lg">
+        <div class="carousel-item active pt-3 bg-primary-subtle">
+          <br />
+          <img
+            src="/images/testimonial1.png"
+            class="d-block testimonial"
+            alt="..."
+          />
+          <br />
+          <p class="text-center testimonialFont ms-5 me-5">
+            "My fence looks almost new. I thought I need a completely new fence.
+            They did a great job at restoring my fence. " <br /><br />Claire
+            Bordue <br />McKinney, Texas
+          </p>
+        </div>
+
+        <div class="carousel-item pt-3 bg-success-subtle">
+          <img
+            src="/images/testimonial2.png"
+            class="d-block testimonial"
+            alt="..."
+          />
+          <p class="text-center testimonialFont ms-5 me-5">
+            "We recently had my fence repaired by Fence Warriors, and I couldn't
+            be more impressed with their work. The work was completed in a
+            timely manner, and they left the area clean and tidy."
+            <br /><br />Mr. and Mrs. Monroe <br />Little Elm, Texas
+          </p>
+        </div>
+
+        <div class="carousel-item pt-3 bg-info-subtle">
+          <img
+            src="/images/testimonial3.png"
+            class="d-block testimonial"
+            alt="..."
+          />
+          <p class="text-center testimonialFont ms-5 me-5">
+            "The installers were incredibly professional and courteous.They went
+            above and beyond to ensure that everything was completed to
+            perfection. Their attention to detail is truly what sets them
+            apart." <br /><br />Joseph Harington <br />Frisco, Texas
+          </p>
+        </div>
       </div>
 
-      <div class="carousel-item pt-3 bg-success-subtle">
-        <img src="/images/testimonial2.png" class="d-block testimonial" alt="..." />
-        <p class="text-center ms-5 me-5">"We recently had my fence repaired by Fence
-          Warriors, and I couldn't be more impressed with their work. The work was
-          completed in a timely manner, and they left the area clean and tidy."
-          <br><br>Mr. and Mrs. Monroe
-          <br>Little Elm, Texas
-        </p>
-      </div>
-
-      <div class="carousel-item pt-3 bg-info-subtle">
-        <img src="/images/testimonial3.png" class="d-block testimonial" alt="..." />
-        <p class="text-center ms-5 me-5">"The installers were incredibly professional and courteous.They went
-          above and beyond to ensure that everything was completed to perfection. Their
-          attention to detail is truly what sets them apart."
-          <br><br>Joseph Harington
-          <br>Frisco, Texas
-        </p>
-      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span
+          style="color: black"
+          class="carousel-control-prev-icon"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span style="color: black" class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+    <div
+      id="view"
+      style="z-index: 5; width: 100%; height: 100vh; position: absolute"
+    ></div>
 
-  <div id="view" style="z-index: 5; width: 100%; height: 100vh; position: absolute"></div>
-
-  <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

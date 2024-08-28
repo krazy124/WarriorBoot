@@ -120,13 +120,13 @@ Extra extra large	xxl	≥1400px
 @media screen and (max-width: 991px) {
   .testimonial {margin-left: 45%;}
 
-  .title {font-size: 5.5rem;}
+  .title {font-size: 11.2vw;}
 
   .subTitle {font-size: 2.3rem}
 }
 
 @media screen and (max-width: 767px) {
-  .title {font-size: var(--f-md);}
+  .title {font-size: 11vw;}
   
   .subTitle {font-size: var(--f-xs);}
   
@@ -136,7 +136,7 @@ Extra extra large	xxl	≥1400px
 
 @media screen and (max-width: 575px) {
 
-  .title {font-size: 2.7rem; margin-top: 15%;}
+  .title {font-size: 11vw; margin-top: 15%;}
 
   .subTitle {font-size: var(--f-xxxs);}
 
